@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Wedding celebration photo gallery for The Abimbolas24" />
+    <meta name="theme-color" content="#e8b4bc" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Memory Gallery - The Abimbolas24</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>The Abimbolas24</h1>
+      <div class="event-details">
+        <span class="date">December 28, 2024</span>
+        <span class="separator">•</span>
+        <span class="venue">Chemline House</span>
+        <span class="separator">•</span>
+        <span class="location">No 7, Obasa Street, Ikeja, Lagos</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="instructions">
+        <h2>Share Your Memories</h2>
+        <p>
+          We are thrilled to share this special day with you! Help us capture the beautiful moments by uploading your favorite pictures from the wedding.
+        </p>
+        <p>
+          Simply select your photos and click "Upload Images" to add them to our memory gallery.
+        </p>
+      </section>
+
+      <section class="upload-container">
+        <div class="upload-area" id="uploadArea">
+          <input type="file" id="fileInput" accept="image/*" multiple />
+          <label for="fileInput" class="file-label">
+            <span class="icon" role="img" aria-label="camera">📸</span>
+            <span class="text">Choose Photos</span>
+            <span class="hint">or drag and drop them here</span>
+          </label>
+        </div>
+        <button id="uploadButton" aria-label="Upload Images">Upload Images</button>
+      </section>
+
+      <section class="gallery-section" aria-label="Photo Gallery">
+        <h2>Memory Gallery</h2>
+        <div class="gallery" id="gallery">
+          <div class="loading" role="status">Loading gallery...</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Thank you for being a part of our special day! ❤️</p>
+      <div class="footer-details">
+        <p class="copyright"> 2024 The Abimbolas</p>
+      </div>
+    </footer>
+
+    <!-- Your Custom Script -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
